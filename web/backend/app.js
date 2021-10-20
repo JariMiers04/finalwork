@@ -12,5 +12,9 @@ app.use(cors());
 
 app.use(router);
 
+router.route('/').get(async(req,res)=>{
+    console.log("this is the index page");
+})
+
 
 app.listen(port, () => console.log(`Server is listening on http://localhost:${port}`))
